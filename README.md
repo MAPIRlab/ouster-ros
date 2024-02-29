@@ -1,5 +1,7 @@
 # Official ROS driver for Ouster sensors
 
+See "scripts" folder for Network Connection configuration
+
 [ROS1 (melodic/noetic)](https://github.com/ouster-lidar/ouster-ros/tree/master) |
 [ROS2 (rolling/humble/iron)](https://github.com/ouster-lidar/ouster-ros/tree/ros2) |
 [ROS2 (galactic/foxy)](https://github.com/ouster-lidar/ouster-ros/tree/ros2-foxy)
