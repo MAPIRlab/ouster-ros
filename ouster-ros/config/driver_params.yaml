@@ -2,7 +2,7 @@ ouster/os_driver:
   ros__parameters:
     # sensor_hostname[required]: hostname or IP address of the sensor (IP4 or
     # IP6).
-    sensor_hostname: ''
+    sensor_hostname: '10.5.5.100'
     # udp_dest[optional]: hostname or multicast group IP where the sensor will
     # send UDP data packets.
     udp_dest: ''
@@ -16,7 +16,7 @@ ouster/os_driver:
     # lidar_mode[optional]: resolution and rate; possible values: { 512x10,
     # 512x20, 1024x10, 1024x20, 2048x10, 4096x5 }. Leave empty to remain on
     # current the lidar mode.
-    lidar_mode: ''
+    lidar_mode: '1024x10'
     # timestamp_mode[optional]: method used to timestamp measurements; possible
     # values:
     # - TIME_FROM_INTERNAL_OSC
@@ -25,7 +25,7 @@ ouster/os_driver:
     # - TIME_FROM_ROS_TIME: This option uses the time of reception of first
     #                       packet of a LidarScan as the timestamp of the IMU,
     #                       PointCloud2 and LaserScan messages.
-    timestamp_mode: ''
+    timestamp_mode: 'TIME_FROM_INTERNAL_OSC'
     # ptp_utc_tai_offset[optional]: UTC/TAI offset in seconds to apply when
     # TIME_FROM_PTP_1588 timestamp mode is used.
     ptp_utc_tai_offset: -37.0
@@ -41,11 +41,11 @@ ouster/os_driver:
     # lidar_port[optional]: port value should be in the range [0, 65535]. If you
     # use 0 as the port value then the first avaliable port number will be
     # assigned.
-    lidar_port: 0
+    lidar_port: 7502
     # imu_port[optional]: port value should be in the range [0, 65535]. If you
     # use 0 as the port value then the first avaliable port number will be
     # assigned.
-    imu_port: 0
+    imu_port: 7503
     # sensor_frame[optional]: name to use when referring to the sensor frame.
     sensor_frame: os_sensor
     # lidar_frame[optional]: name to use when referring to the lidar frame.
