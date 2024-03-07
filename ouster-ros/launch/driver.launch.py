@@ -34,7 +34,7 @@ def generate_launch_description():
 
     ouster_ns = LaunchConfiguration('ouster_ns')
     ouster_ns_arg = DeclareLaunchArgument(
-        'ouster_ns', default_value='ouster')
+        'ouster_ns', default_value='/ouster')
 
     rviz_enable = LaunchConfiguration('viz')
     rviz_enable_arg = DeclareLaunchArgument('viz', default_value='False')
